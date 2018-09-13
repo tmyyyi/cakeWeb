@@ -1,0 +1,226 @@
+@import "base";
+
+//cart_menu
+.cart_menu{
+    width: 100%;
+    border-top: 1px solid #e6e4e5;
+    
+    .cart_menu_wrap{
+        width: 1200px;
+        margin: 50px auto 0;
+
+        
+        .menu_top{
+            height: 36px;
+            background: #e6e4e5;
+            display: flex;
+            justify-content: space-around;
+            p{
+                font-size: 14px;
+               line-height: 36px;
+            }
+        }
+        
+        .menu_list{
+            width: 1200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 12px;
+            text-align: center;
+            border: 1px solid #CCCCCC;
+            overflow: hidden;
+            min-height: 152px;
+            div{
+                width: 260px;
+                height: 152px;
+                /*border: 1px solid;*/
+                dl{
+                    dt{
+                        width: 118px;
+                        height: 118px;
+                        border: 1px solid #CCCCCC;
+                        float: left;
+                        margin-top: 10px;
+                        img{
+                            width: 116px;
+                            height: 116px;
+                        }
+                    }
+                    dd{
+                        float: left;
+                        line-height: 130px;
+                        padding-left: 20px;
+                    }
+                    
+                }
+                >p{
+                    line-height: 130px;
+                }
+                #cartprice{
+                    color: #e3004f;
+                    font-weight: 600;
+                }
+                #cartdel a{
+                    color: #e3004f;
+                    font-weight: 600;
+                }
+                 #jiajia{
+                    padding: 0 6px;
+                    border: 1px solid #cccccc;
+                    background: #f0f0f0;
+                    a{ color: black;}
+                }
+                #jianjian{
+                    padding: 0 6px;
+                    border: 1px solid #cccccc;
+                    background: #f0f0f0;
+                    a{ color: black;}
+                }
+               
+            }
+        }
+
+        .carttotal{
+            width: 100%;
+            height: 208px;
+            .totat_wrap{
+                width: 1200px;
+                height: 208px;
+                margin: 0 auto;
+                .totalselect{
+                    width: 356px;
+                    height: 175px;
+                    float: right;
+                    /*border: 1px solid;*/
+                    dl{
+                        height: 136px;
+                        dt{
+                            border-bottom: 1px solid #ccc;
+                            font-size: 14px;
+                            height: 40px;
+                            line-height: 40px;
+                        }
+                        dd{
+                            height: 32px;
+                            line-height: 28px;
+                            font-size: 12px;
+                            span{
+                                float: right;
+                            }
+                        }
+                        dd:last-child{
+                            font-size: 14px;
+                            border-top: 1px solid #ccc;
+                        }
+                        dd:nth-child(3){
+                            span{
+                                color: #de5356;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                    >a{
+                        width:80px;
+                        height: 30px;
+                        display: inline-block;
+                        background: #de5356;
+                        color: white;
+                        text-align:center;
+                        line-height: 30px;
+                        font-size: 14px;
+                        float: right;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+//cart_menu
+.cart_total{
+    width: 100%;
+    border-top: 1px solid #e6e4e5;
+    .cart_total_wrap{
+        width: 1200px;
+        margin: 50px auto 0;
+        .carttotal{
+            width: 100%;
+            height: 208px;
+            .totat_wrap{
+                width: 1200px;
+                height: 208px;
+                margin: 0 auto;
+                .totalselect{
+                    width: 356px;
+                    height: 175px;
+                    float: right;
+                    /*border: 1px solid;*/
+                    dl{
+                        height: 136px;
+                        dt{
+                            border-bottom: 1px solid #ccc;
+                            font-size: 14px;
+                            height: 40px;
+                            line-height: 40px;
+                        }
+                        dd{
+                            height: 32px;
+                            line-height: 28px;
+                            font-size: 12px;
+                            span{
+                                float: right;
+                            }
+                        }
+                        dd:last-child{
+                            font-size: 14px;
+                            border-top: 1px solid #ccc;
+                        }
+                        dd:nth-child(3){
+                            span{
+                                color: #de5356;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                    >a{
+                        width:80px;
+                        height: 30px;
+                        display: inline-block;
+                        background: #de5356;
+                        color: white;
+                        text-align:center;
+                        line-height: 30px;
+                        font-size: 14px;
+                        float: right;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
