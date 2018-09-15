@@ -31,8 +31,8 @@ define(function(){
 								<div class="sl" id="sl">
 									<p id="cartnum">
 										<span id="jianjian"><a href="javascript:;">-</a></span>
-										<span>${val.num}</span> 
-										<i id="jiajia"><a href="javascript:;">+</a></i>
+										<span id = "pronum">${val.num}</span> 
+										<i id="jiajia"><a type="submit" href="javascript:;">+</a></i>
 									</p>
 								</div>
 								<div class="yc" id="yc">
@@ -49,16 +49,19 @@ define(function(){
 			$(".totalcoset").html(allcost);
 
 			$(".menu_list").on("click","span",function(){
+				var _this = $(this);
 				var name = $(this).parent().parent().parent().find("dd").html();
 				name = String(name);
+				console.log(2);
 				$.get("http://localhost/gulpproject/api/vi/jian.php",{"name":name},function(data){
-					window.location.href("/html/cart.html");
+					
 				})
 			})
 
 			$(".menu_list").on("click","i",function(){
 				var name = $(this).parent().parent().parent().find("dd").html();
 				name = String(name);
+				console.log(4);
 				$.get("http://localhost/gulpproject/api/vi/add.php",{"name":name},function(data){
 					console.log(data);
 				})
@@ -79,6 +82,8 @@ define(function(){
 			},"json");
 
 	showcart.prototype.init2=function(){
+
+
 		
 	}
 

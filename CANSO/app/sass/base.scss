@@ -1,5 +1,5 @@
 @import "reset";
-
+@import "tan";
 /*header吸顶效果*/
 .header_hide{
     width: 100%;
@@ -422,12 +422,17 @@
                 dd:last-child{
                     width: 195px;
                     height: 240px;
-                    background: url(../img/qr_code_bottom.png) no-repeat;
+                    /*background: url(../img/qr_code_bottom.png) no-repeat;*/
                     position: absolute;
-                    top: -218px;
+                    top: 68px;
                     left: -72px;
                     display: none;
-                    z-index:10000;
+                    z-index:999;
+                    img{
+                        width: 195px;
+                        height: 240px;
+                        z-index:999;
+                    }
                 }
                 &:hover{
                     dd:last-child{ display: block; }

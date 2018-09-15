@@ -12,7 +12,9 @@ require.config({
 		"list": "module/product_list",
 		"productDetails":"module/productDetails",
 		"cookie":"libs/jquery.cookie",
-		"showcart":"module/showcart"
+		"showcart":"module/showcart",
+		"addcart":"module/addcart",
+		"tantantan":"module/tantantan"
 	},
 	shim: {
 		lunbo:{
@@ -44,6 +46,15 @@ require.config({
 		},
 		showcart:{
 			deps:["jquery"]
+		},
+		addcart:{
+			deps:["jquery"]
+		},
+		tantantan:{
+			deps:["jquery"]
+		},
+		tantantan:{
+			deps:["addheaderandfooter"]
 		}
 	}
 })

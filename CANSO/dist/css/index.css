@@ -55,6 +55,61 @@ a {
 /*html,body{
     height:100%;
 }*/
+/* CSS Document */
+.popBox {
+  position: absolute;
+  min-width: 300px;
+  max-width: 600px;
+  border: 1px solid #555;
+  background: #fff;
+  z-index: 10010;
+  box-shadow: 1px 1px 5px 0px #666;
+  top: 200px;
+  left: 450px; }
+
+.popBox h4 {
+  height: 40px;
+  line-height: 40px;
+  background: #444;
+  color: #fff;
+  text-indent: 1em;
+  cursor: move; }
+
+.popBox .closeBtn {
+  position: absolute;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  background: #666;
+  top: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  cursor: pointer; }
+
+.popBox .popCont {
+  padding: 20px;
+  line-height: 24px; }
+
+.popBox .btnBar {
+  text-align: center;
+  padding-bottom: 20px; }
+
+.popBox .btnBar button {
+  height: 35px;
+  width: 80px;
+  margin: 0 5px;
+  background: #ddd;
+  border: 1px solid #ccc; }
+
+.alertBox p {
+  text-align: center; }
+
+.promptBox textarea {
+  width: 400px;
+  height: 60px;
+  margin-top: 10px; }
+
 /*header吸顶效果*/
 .header_hide {
   width: 100%;
@@ -399,12 +454,16 @@ a {
         .footer .footer_wrap .link dl:last-child dd:last-child {
           width: 195px;
           height: 240px;
-          background: url(../img/qr_code_bottom.png) no-repeat;
+          /*background: url(../img/qr_code_bottom.png) no-repeat;*/
           position: absolute;
-          top: -218px;
+          top: 68px;
           left: -72px;
           display: none;
-          z-index: 10000; }
+          z-index: 999; }
+          .footer .footer_wrap .link dl:last-child dd:last-child img {
+            width: 195px;
+            height: 240px;
+            z-index: 999; }
         .footer .footer_wrap .link dl:last-child:hover dd:last-child {
           display: block; }
     .footer .footer_wrap .footer_tel {
@@ -513,7 +572,7 @@ a {
     position: relative;
     margin: -58px auto 0;
     background-color: #f9f9f9;
-    overflow: hidden; }
+    /*        overflow: hidden; */ }
     .content .content_wrap .content_w_top {
       height: 295px;
       width: 100%;
@@ -546,21 +605,21 @@ a {
               transition: all 1s; }
           .content .content_wrap .content_product > div dl dd:nth-child(2) {
             line-height: 26px; }
-            .content .content_wrap .content_product > div dl dd:nth-child(2) span {
-              display: inline-block;
-              height: 24px;
-              padding: 0 6px;
-              margin-right: 10px;
-              background: #ff4001;
-              color: white;
-              text-align: center;
-              line-height: 24px; }
+          .content .content_wrap .content_product > div dl i {
+            display: inline-block;
+            height: 24px;
+            padding: 0 6px;
+            margin-right: 10px;
+            background: #ff4001;
+            color: white;
+            text-align: center;
+            line-height: 24px; }
           .content .content_wrap .content_product > div dl dd:nth-child(3) {
             margin-top: 34px; }
-          .content .content_wrap .content_product > div dl dd:nth-child(4) a {
+          .content .content_wrap .content_product > div dl span a {
             color: #ff3500;
             font-size: 12px; }
-          .content .content_wrap .content_product > div dl dd:nth-child(4):hover a {
+          .content .content_wrap .content_product > div dl span:hover a {
             text-decoration: underline; }
         .content .content_wrap .content_product > div:hover {
           background: #f3e7e7; }
@@ -617,18 +676,18 @@ a {
               transition: all 1s; }
           .content_toast .content_toast_wrap .toast_product > div dl dd:nth-child(2) {
             line-height: 26px; }
-            .content_toast .content_toast_wrap .toast_product > div dl dd:nth-child(2) span {
-              display: inline-block;
-              height: 24px;
-              padding: 0 6px;
-              margin-right: 10px;
-              background: #ff4001;
-              color: white;
-              text-align: center;
-              line-height: 24px; }
+          .content_toast .content_toast_wrap .toast_product > div dl i {
+            display: inline-block;
+            height: 24px;
+            padding: 0 6px;
+            margin-right: 10px;
+            background: #ff4001;
+            color: white;
+            text-align: center;
+            line-height: 24px; }
           .content_toast .content_toast_wrap .toast_product > div dl dd:nth-child(3) {
             margin-top: 34px; }
-          .content_toast .content_toast_wrap .toast_product > div dl dd:nth-child(4) a {
+          .content_toast .content_toast_wrap .toast_product > div dl span a {
             color: #ff3500; }
         .content_toast .content_toast_wrap .toast_product > div:hover {
           background: #f3e7e7; }
@@ -685,18 +744,18 @@ a {
               transition: all 1s; }
           .content_gift .content_gift_wrap .gift_product > div dl dd:nth-child(2) {
             line-height: 26px; }
-            .content_gift .content_gift_wrap .gift_product > div dl dd:nth-child(2) span {
-              display: inline-block;
-              height: 24px;
-              padding: 0 6px;
-              margin-right: 10px;
-              background: #ff4001;
-              color: white;
-              text-align: center;
-              line-height: 24px; }
+          .content_gift .content_gift_wrap .gift_product > div dl i {
+            display: inline-block;
+            height: 24px;
+            padding: 0 6px;
+            margin-right: 10px;
+            background: #ff4001;
+            color: white;
+            text-align: center;
+            line-height: 24px; }
           .content_gift .content_gift_wrap .gift_product > div dl dd:nth-child(3) {
             margin-top: 34px; }
-          .content_gift .content_gift_wrap .gift_product > div dl dd:nth-child(4) a {
+          .content_gift .content_gift_wrap .gift_product > div dl span a {
             color: #ff3500; }
         .content_gift .content_gift_wrap .gift_product > div:hover {
           background: #f3e7e7; }
@@ -715,14 +774,15 @@ a {
           padding: 0 4px; }
 
 /*comments*/
-.comments {
-  width: 100%;
-  height: 550px; }
-  .comments .comments_wrap {
-    width: 1246px;
-    overflow: hidden;
-    border: 1px solid #ccc; }
-
+/*.comments{
+    width: 100%;
+    height: 550px;
+    .comments_wrap{
+        width: 1246px;
+        overflow: hidden;
+        border: 1px solid #ccc;
+    }
+}*/
 /*fixed*/
 .fixed {
   height: 70px;
